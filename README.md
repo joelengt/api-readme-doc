@@ -1,4 +1,4 @@
-# api readme doc
+# Api readme doc
 a simple api documentation in a readme.md
 
 # Format
@@ -11,14 +11,17 @@ a simple api documentation in a readme.md
 }
 ```
 	
-// response error
+## response error
+```json
 {
 	"status": 404,
 	"error": "Not found"
 }
+```
 
 
-// response list with pagination detail or endpoint detail
+## response list with pagination detail or endpoint detail
+```json
 {
 	"status": 200,
 	"data": {...},
@@ -26,19 +29,14 @@ a simple api documentation in a readme.md
       // pagination detail or extra detail
     }
 }
+```
+
+## pagination 
 
 
-
-
-
-
-// pagination 
-
-
+```json
 // request
-
 // URI: /products?page=5&page_size=20
-
 // response list with pagination detail or endpoint detail
 {
 	"status": 200,
@@ -79,5 +77,5 @@ a simple api documentation in a readme.md
         }
     }
 }
-
+```
 
